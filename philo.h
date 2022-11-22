@@ -19,7 +19,7 @@ typedef struct s_philo
 	int				count_eat;
 }				t_philo;
 
-typedef struct s_diner
+typedef struct s_table
 {
 	int				n_philo;
 	int				time_to_die;
@@ -31,4 +31,4 @@ typedef struct s_diner
 	long long		start_time;
 	pthread_mutex_t	*fork;
 	pthread_mutex_t	print;
-}				t_diner;
+}				t_table;
