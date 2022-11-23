@@ -51,12 +51,12 @@ int	ft_init_table(t_table *table, int argc, char **argv)
 {
 	struct timeval	tv;
 	
-	table->n_philo = ft_atoi(argv[1]);
-	table->time_to_die = ft_atoi(argv[2]);
-	table->time_to_eat = ft_atoi(argv[3]);
-	table->time_to_sleep = ft_atoi(argv[4]);
+	table->n_philo = ft_atoll(argv[1]);
+	table->time_to_die = ft_atoll(argv[2]);
+	table->time_to_eat = ft_atoll(argv[3]);
+	table->time_to_sleep = ft_atoll(argv[4]);
 	if (argc == 6)
-		table->n_meal = ft_atoi(argv[5]);
+		table->n_meal = ft_atoll(argv[5]);
 	if (table->n_philo <= 0 || table->time_to_die < 0 || table->time_to_eat < 0
 		|| table->time_to_sleep < 0 || table->n_meal <= 0)
 		return (-1);
