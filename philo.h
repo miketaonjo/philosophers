@@ -11,12 +11,12 @@
 typedef struct s_philo
 {
 	struct s_arg	*table;
-	pthread_t		thread;
 	int				id;
-	int				fork_l;
-	int				fork_r;
+	int				fork_1;
+	int				fork_2;
 	long long		lst_eat;
 	int				count_eat;
+	pthread_t		thread;
 }				t_philo;
 
 typedef struct s_table
