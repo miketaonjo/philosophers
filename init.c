@@ -17,12 +17,12 @@ int	ft_init_philo(t_table *table)
 		(*philo)[i].id = i;
 		(*philo)[i].fork_1 = i;
 		(*philo)[i].fork_2 = (i + 1) % table->nb_philo;
-		if (gettimeofday(&tv, NULL) == -1)
+		/*if (gettimeofday(&tv, NULL) == -1)
 		{
 			putstr_error("Error timeval");
 			return (-1);
 		}
-		(*philo)[i].lst_eat = (tv.tv_sec * 1000) + (tv.tv_usec / 1000);
+		(*philo)[i].lst_eat = (tv.tv_sec * 1000) + (tv.tv_usec / 1000);*/
 		(*philo)[i].count_eat = 0;
 		i++;
 	}
