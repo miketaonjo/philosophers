@@ -1,7 +1,6 @@
-int	ft_init_philo(t_table *table)
+int	ft_init_philo(t_table *table, t_philo **philo)
 {
 	int	i;
-	t_philo	**philos;
 	struct timeval	tv;
 
 	*philos = malloc(sizeof(t_philo) * table->n_philo);
