@@ -26,9 +26,9 @@ typedef struct s_table
 	int				time_to_eat;
 	int				time_to_sleep;
 	int				n_meal;
+	long long			start;
 	int				stop;
 	int				finish_eat;
-	long long		start;
 	pthread_mutex_t	*fork;
 	pthread_mutex_t	print;
 }				t_table;
