@@ -16,11 +16,11 @@ int	ft_atoll(char *s)
 {
 	long long	result;
 	int		sign;
-	int		i;
+	int		len;
 
 	result = 0;
 	sign = 1;
-	i = 0;
+	len = 0;
 	while (*s == '\t' || *s == '\n' || *s == '\v'
 		|| *s == '\f' || *s == '\r' || *s == ' ')
 		s++;
@@ -31,8 +31,8 @@ int	ft_atoll(char *s)
 	while (*s >= '0' && *s <= '9')
 	{
 		result = result * 10 + (*s - 48);
-		i++;
-		if (result < 0 || i > 19)
+		len++;
+		if (result < 0 || len > 19)
 			return (-1);
 		s++;
 	}
