@@ -10,7 +10,7 @@
 
 typedef struct s_philo
 {
-	struct s_arg	*diner;
+	struct s_arg	*table;
 	pthread_t		thread;
 	int				id;
 	int				fork_l;
@@ -25,10 +25,10 @@ typedef struct s_table
 	int				time_to_die;
 	int				time_to_eat;
 	int				time_to_sleep;
-	int				eat_times;
-	int				finish;
+	int				n_meal;
+	int				stop;
 	int				finish_eat;
-	long long		start_time;
+	long long		start;
 	pthread_mutex_t	*fork;
 	pthread_mutex_t	print;
 }				t_table;
