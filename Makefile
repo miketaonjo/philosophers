@@ -10,13 +10,13 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = main.c \
-	   init.c \
-	   check_arg.c \
-	   philosophers.c \
-	   philosophers_utils.c \
-	   utils.c \
-	   free.c \
+SRCS = srcs/main.c \
+	   srcs/init.c \
+	   srcs/check_arg.c \
+	   srcs/philosophers.c \
+	   srcs/philosophers_utils.c \
+	   srcs/utils.c \
+	   srcs/free.c \
 
 OBJS = ${SRCS:.c=.o}
 
