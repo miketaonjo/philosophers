@@ -19,3 +19,6 @@ In order to compile :
 
 Execution :
 <code>./philo <number_of_philosophers> <time_to_die> <time_to_eat> <time_to_sleep> [number_of_times_each_philo_must_eat]</code>
+
+Exemple = 
+<code>./philo 4 800 200 200 3</code>
